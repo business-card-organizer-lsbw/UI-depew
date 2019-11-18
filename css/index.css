@@ -139,6 +139,8 @@ html,
 body {
   font-family: 'Open Sans', sans-serif;
   color: black;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
 }
 h1,
 h2,
@@ -152,7 +154,7 @@ h1 {
   font-size: 3rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 6rem;
 }
 h3 {
   font-size: 3rem;
@@ -160,9 +162,62 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  color: #222222;
 }
 .container {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1% 2% 2% 1%;
+}
+.logo {
+  width: 20%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 2rem;
+}
+a:hover {
+  text-decoration: underline;
+  color: #545eaa;
+}
+.mission {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 4% 10%;
+  text-align: center;
+  padding: 4%;
+}
+.mission p {
+  margin-top: 4%;
+}
+.learn-more {
+  display: block;
+  border-radius: 30px;
+  height: 8vh;
+  width: 200px;
+  font-size: 1.8rem;
+  margin-top: 4%;
+  color: #383838;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.learn-more:hover {
+  transform: scale(1.1);
+  background-color: #545eaa;
+  color: #fffdf6;
 }
