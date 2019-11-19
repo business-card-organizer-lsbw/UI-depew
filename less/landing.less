@@ -5,6 +5,10 @@
     margin: 4% 10%;
     text-align: center;
     padding: 4%;
+
+    @media @phone {
+        flex-direction: column;
+    }
 }
 
 .mission p {
@@ -23,10 +27,15 @@
     transition: all .2s ease-in-out;
     text-transform: uppercase; 
     font-weight: bold;
+
+    @media @phone {
+        margin-bottom: 12%;
+    }
 }
 
 .learn-more:hover { 
     transform: scale(1.1);
-    background-color: @purp;
+    background-color: #F1C40F;
     color: #fffdf6;
     }
+
