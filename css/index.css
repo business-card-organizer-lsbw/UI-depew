@@ -256,6 +256,7 @@ a:hover {
   .dropdown-content a {
     text-decoration: none;
     display: block;
+    line-height: 2.5rem;
   }
 }
 .dropdown:hover .dropdown-content {
@@ -277,6 +278,11 @@ a:hover {
 @media (max-width: 500px) {
   .mission {
     flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .mission h2 {
+    font-size: 5.2rem;
   }
 }
 .mission p {
@@ -309,6 +315,16 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 800px) {
+  .hiw {
+    padding: 6%;
+  }
+}
+@media (max-width: 500px) {
+  .hiw {
+    padding: 6%;
+  }
+}
 .hiw h1 {
   margin-bottom: 4%;
   font-size: 4rem;
@@ -319,9 +335,17 @@ a:hover {
   justify-content: flex-start;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  .sect1 {
+    margin-bottom: 6%;
+  }
+}
 .sect1 img {
   width: 10%;
   margin-right: 2%;
+}
+.sect1 img:hover {
+  transform: rotateY(180deg);
 }
 .sect1 p {
   font-size: 2.2rem;
@@ -332,8 +356,16 @@ a:hover {
   justify-content: flex-start;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  .sect2 {
+    margin-bottom: 6%;
+  }
+}
 .sect2 img {
   width: 10%;
+}
+.sect2 img:hover {
+  transform: rotateY(180deg);
 }
 .sect2 p {
   font-size: 2.2rem;
