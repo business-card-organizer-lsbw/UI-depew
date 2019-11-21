@@ -174,39 +174,41 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1% 2% 2% 1%;
+  margin: 1% 0% 2% 0%;
+  padding: 0 2%;
+  border-bottom: 1px solid rgba(175, 174, 174, 0.5);
 }
 @media (max-width: 500px) {
   header {
     flex-direction: column;
   }
 }
-.logo {
+header .logo {
   width: 20%;
 }
 @media (max-width: 800px) {
-  .logo {
+  header .logo {
     width: 30%;
   }
 }
 @media (max-width: 500px) {
-  .logo {
+  header .logo {
     width: 50%;
   }
 }
-nav {
+header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 30%;
 }
 @media (max-width: 500px) {
-  nav {
+  header nav {
     display: none;
   }
 }
 @media (max-width: 800px) {
-  nav {
+  header nav {
     width: 50%;
   }
 }
@@ -221,15 +223,6 @@ a:hover {
   text-decoration: underline;
   color: #545eaa;
 }
-.dropbtn {
-  display: none;
-}
-@media (max-width: 500px) {
-  .dropbtn {
-    display: block;
-    font-size: 2.5rem;
-  }
-}
 .dropdown {
   display: none;
   top: 2%;
@@ -241,11 +234,20 @@ a:hover {
     display: block;
   }
 }
-.dropdown-content {
+.dropdown .dropbtn {
   display: none;
 }
 @media (max-width: 500px) {
-  .dropdown-content {
+  .dropdown .dropbtn {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+.dropdown .dropdown-content {
+  display: none;
+}
+@media (max-width: 500px) {
+  .dropdown .dropdown-content {
     z-index: 1;
     text-align: center;
   }
@@ -289,7 +291,7 @@ a:hover {
 .mission p {
   margin-top: 4%;
 }
-.learn-more {
+.mission .learn-more {
   display: block;
   border-radius: 30px;
   height: 8vh;
@@ -297,17 +299,18 @@ a:hover {
   font-size: 1.8rem;
   margin-top: 4%;
   color: #383838;
+  background-color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
   font-weight: bold;
 }
 @media (max-width: 500px) {
-  .learn-more {
+  .mission .learn-more {
     margin-bottom: 12%;
   }
 }
-.learn-more:hover {
+.mission .learn-more:hover {
   transform: scale(1.1);
   background-color: #F1C40F;
   color: #fffdf6;
@@ -329,6 +332,7 @@ a:hover {
 .hiw h1 {
   margin: 4% 0;
   font-size: 4rem;
+  color: #222222;
 }
 .sect1 {
   display: flex;
@@ -351,6 +355,11 @@ a:hover {
 .sect1 p {
   font-size: 2.2rem;
 }
+@media (max-width: 500px) {
+  .sect1 p {
+    font-size: 1.8rem;
+  }
+}
 .sect2 {
   display: flex;
   align-items: center;
@@ -371,6 +380,11 @@ a:hover {
 .sect2 p {
   font-size: 2.2rem;
 }
+@media (max-width: 500px) {
+  .sect2 p {
+    font-size: 1.8rem;
+  }
+}
 hr {
   border-width: 2px;
   margin-top: 12%;
@@ -390,10 +404,14 @@ hr {
     padding: 6%;
   }
 }
+.about h3 {
+  color: #222222;
+}
 .about h1 {
   text-align: center;
   margin: 4% 0;
   font-size: 4rem;
+  color: #222222;
 }
 .backend {
   display: flex;
@@ -406,8 +424,9 @@ hr {
 }
 .backend img {
   height: 12vh;
+  transition: all 800ms ease-in-out;
 }
-.backend img img:hover {
+.backend img:hover {
   -ms-transform: rotate(360deg);
   /* IE 9 */
   -webkit-transform: rotate(360deg);
@@ -430,6 +449,14 @@ hr {
 }
 .frontend img {
   height: 12vh;
+  transition: all 800ms ease-in-out;
+}
+.frontend img:hover {
+  -ms-transform: rotate(360deg);
+  /* IE 9 */
+  -webkit-transform: rotate(360deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
 }
 .ui {
   text-align: center;
@@ -437,6 +464,14 @@ hr {
 }
 .ui img {
   height: 12vh;
+  transition: all 800ms ease-in-out;
+}
+.ui img:hover {
+  -ms-transform: rotate(360deg);
+  /* IE 9 */
+  -webkit-transform: rotate(360deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
 }
 footer {
   max-width: 500px;
@@ -455,19 +490,24 @@ footer img {
   vertical-align: middle;
   max-width: 100%;
 }
-.icons {
+footer .icons {
   margin: 5% 0;
   display: flex;
   justify-content: space-between;
   width: 30%;
 }
-.icons img {
+footer .icons img {
   width: 20%;
 }
 .bottom-nav {
   display: flex;
   justify-content: space-between;
   width: 15%;
+}
+@media (max-width: 500px) {
+  .bottom-nav {
+    width: 20%;
+  }
 }
 .bottom-nav a {
   font-size: 0.8rem;

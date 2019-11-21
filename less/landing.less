@@ -7,40 +7,39 @@
     @media @phone {
         flex-direction: column;
     }
-}
-
-.mission h2 {
-    @media @tablet {
-        font-size: 5.2rem;
+    h2 {
+        @media @tablet {
+            font-size: 5.2rem;
+        }
     }
-}
-
-
-.mission p {
-    margin-top: 4%;
-}
-
-.learn-more {
-    display: block;
-    border-radius: 30px;
-    height: 8vh;
-    width: 200px;
-    font-size: 1.8rem;
-    margin-top: 4%;
-    color: #383838;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    text-transform: uppercase; 
-    font-weight: bold;
-
-    @media @phone {
-        margin-bottom: 12%;
+    p {
+        margin-top: 4%;
     }
-}
+    
+    .learn-more {
+        display: block;
+        border-radius: 30px;
+        height: 8vh;
+        width: 200px;
+        font-size: 1.8rem;
+        margin-top: 4%;
+        color: #383838;
+        background-color: rgba(255, 255, 255, .4);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        text-transform: uppercase; 
+        font-weight: bold;
+    
+        @media @phone {
+            margin-bottom: 12%;
+        }
+    }//ends learn-more
 
-.learn-more:hover { 
-    transform: scale(1.1);
-    background-color: @yellowAccent;
-    color: #fffdf6;
-    }
+    .learn-more:hover { 
+        transform: scale(1.1);
+        background-color: @yellowAccent;
+        color: #fffdf6;
+    }//ends hover
+}//ends mission
+
 

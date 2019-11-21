@@ -6,30 +6,37 @@ footer {
     padding-bottom: 5%;
     .flexbox(center, center);
     flex-direction: column;
-}
 
-footer img {
-    width: 10%;
-    text-align: center;
-    vertical-align: middle;
-    max-width: 100%;
-}
+    img {
+        width: 10%;
+        text-align: center;
+        vertical-align: middle;
+        max-width: 100%;
+    }
 
-.icons {
-    margin: 5% 0;
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-}
-.icons img {
-    width: 20%;
-}
+    .icons {
+        margin: 5% 0;
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+
+        img {
+            width: 20%;
+        }
+    }//ends icons
+}//ends footer
+
 
 .bottom-nav {
     display: flex;
     justify-content: space-between;
     width: 15%;
-}
-.bottom-nav a {
-    font-size: .8rem;
+
+    @media @phone {
+        width: 20%;
+    }
+
+    a {
+        font-size: .8rem;
+    }
 }
