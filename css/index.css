@@ -478,7 +478,7 @@ footer {
   margin-right: auto;
   margin-left: auto;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -503,6 +503,7 @@ footer .icons img {
   display: flex;
   justify-content: space-between;
   width: 15%;
+  margin-bottom: 2%;
 }
 @media (max-width: 500px) {
   .bottom-nav {
