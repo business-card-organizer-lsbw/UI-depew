@@ -12,14 +12,12 @@
 }
 
 .hiw h1 {
-    margin-bottom: 4%;
+    margin: 4% 0;
     font-size: 4rem;
 }
 
 .sect1 {
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
+    .flexbox(center, flex-start);
     margin-bottom: 2%;
 
     @media @phone {
@@ -41,9 +39,7 @@
 }
 
 .sect2 {
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
+    .flexbox(center, flex-start);
     margin-bottom: 2%;
 
     @media @phone {
@@ -63,3 +59,8 @@
     font-size: 2.2rem;
 }
 
+hr {
+    border-width: 2px;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
