@@ -438,6 +438,7 @@ hr {
 }
 .twoboxes {
   display: flex;
+  justify-content: space-between;
   margin: 8% 0;
 }
 .twoboxes p {
@@ -498,6 +499,7 @@ footer .icons {
 }
 footer .icons img {
   width: 20%;
+  max-width: 100%;
 }
 .bottom-nav {
   display: flex;
